@@ -1,0 +1,20 @@
+<%- include("partials/header") -%>
+
+
+<div class="box" id="heading">
+    <h1>Home</h1>
+</div>
+<div class="item">
+    <p> <%= homeStartingCon %> </p><br>
+    <% for(var i=0 ; i < newItemTitle.length; i++){%>
+        <div class="item">
+            <h1> <%=newItemTitle[i]%> </p></h1>
+            <p> <%=newItemcontent[i]%> </p>
+            <br>
+        </div>
+    <% } %>
+</div>
+
+
+
+<%- include("partials/footer") -%>
